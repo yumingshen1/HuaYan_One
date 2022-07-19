@@ -1,0 +1,31 @@
+LoginApi: #登录
+  path: /accounts/password/authenticate
+  Method: POST
+
+OrganizApi: #部门
+  path: /api/v4/organizations
+  add:
+    { "name": "utuytut", "parent": "qpG8DsWSaY8FAwWxN", "sort_no": 100, "hidden": false, "space": "NhnKCEchFReJbgqZM" }
+  update:
+    { "$set": { "name": "testccc", "parent": "qpG8DsWSaY8FAwWxN", "sort_no": 100, "hidden": false, "space": "NhnKCEchFReJbgqZM" } }
+
+AccountsAPI: #签约对象
+  path: /api/v4/accounts
+  add:
+    { "name": name, "category": 1, "company_ids": ["QmBLZC5zKaEMu96QN"], "status": 1, "space": self.api.space }
+  update:
+    { "$set": { "name": "testobj001", "phone": "400-888888", "address": "南京市软件大道", "registered_capital": 1000000, "category": "1", "credit_code": "370202199507078631", "company_ids": [ "QmBLZC5zKaEMu96QN" ],"status": "2","space": "jTaQzFyri4ojvYSQm" } }
+
+ContractTypesAPI: #合同分类
+  path: /api/v4/contract_types
+  add:
+    { name: "房租合同", code: "2020-001", space: "jTaQzFyri4ojvYSQm" }
+  update:
+    { '$set': { 'name': "房租合同1", 'code': "2020-001", 'space': "jTaQzFyri4ojvYSQm" } }
+
+ContractsAPI: #合同
+  path: /api/v4/contracts
+  add:
+    { "no": "009", "create_date": "2020-07-07T07:31:06.754Z", "company_id": "QmBLZC5zKaEMu96QN", "othercompany": "38n6uHtDsdfmQ72jT", "project": "jgrJCeMttzD8pHZhy", "contract_type": "7Gy5aL2sM3gqnsg77", "name": "test001", "bop": "付款合同", "applicant": "5efae24570ff1b0012038be1", "owner": "5efae24570ff1b0012038be1", "virtual_contract": "合同","amount": 0, "amount_type": "固定", "receive_payment_type": "一次性", "paid_amount": 0, "unpaid_amount": 0, "receipted_amount": 0, "unclaimed_votes_amount": 0, "received_amount": 0, "unreceived_amount": 0, "for_invoicing_amount": 0, "unfor_invoicing_amount": 0, "space": "jTaQzFyri4ojvYSQm" }
+  update:
+    { "$set": { "no": "009", "create_date": "2020-07-07T07:31:06.754Z", "company_id": "QmBLZC5zKaEMu96QN", "othercompany": "38n6uHtDsdfmQ72jT", "project": "jgrJCeMttzD8pHZhy", "contract_type": "7Gy5aL2sM3gqnsg77", "name": "test001", "bop": "付款合同", "applicant": "5efae24570ff1b0012038be1", "owner": "5efae24570ff1b0012038be1", "virtual_contract": "合同", "amount": 0, "amount_type": "固定", "receive_payment_type": "一次性", "paid_amount": 0, "unpaid_amount": 0, "receipted_amount": 0, "unclaimed_votes_amount": 0, "received_amount": 0, "unreceived_amount": 0, "for_invoicing_amount": 0, "unfor_invoicing_amount": 0, "space": "jTaQzFyri4ojvYSQm" } }
