@@ -5,7 +5,7 @@
 # @Software : PyCharm
 import os
 
-from utils.handle_path import product_path,configs_path
+from utils.handle_path import product_path,configs_path,caseData_path
 import yaml
 
 def get_ApiData_yml(fileDir):
@@ -13,6 +13,16 @@ def get_ApiData_yml(fileDir):
         return yaml.safe_load(f.read())
 
 
+# [(),()] 参数化格式
+def get_yml_caseData(fileDir,caseName):
+    content = get_ApiData_yml(fileDir)[caseName]
+    test_data = list(content.values())      #获得字典值
+    print(test_data)
+    res = list(zip(*test_data))      # @zip,  *解包为两个list， zip打包到一起
+    print(res)
+    return res
+
+
 if __name__ == '__main__':
-    fileDir = os.path.join(configs_path,'apiConfig.yml')
-    print(get_ApiData_yml(fileDir=fileDir))
+    fileDir = os.path.join(caseData_path,'contract_data.yml')
+    get_yml_caseData(fileDir,'test_tc003001')

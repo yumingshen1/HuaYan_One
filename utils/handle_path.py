@@ -12,6 +12,9 @@ product_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ##configs
 configs_path = os.path.join(product_path,'configs')
 
+#casedata
+caseData_path = os.path.join(product_path,'data')
+
 if __name__ == '__main__':
 
     print(configs_path)

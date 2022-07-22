@@ -67,7 +67,7 @@ class baseApi:
         kwargs['space'] = self.spaceid
         payload['$set'].update(kwargs)
 
-        resp = self.request_send(id=id,json=payload)
+        resp = self.request_send("PUT",id=id,json=payload)
         return resp
 
 

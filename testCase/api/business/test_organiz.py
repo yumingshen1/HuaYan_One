@@ -3,7 +3,9 @@
 # Auther : shenyuming
 # @File : test_organiz.py
 # @Software : PyCharm
-
+'''
+无子部门情况下添加部门
+'''
 import pytest
 from common.ApiAssert import ApiAssert
 

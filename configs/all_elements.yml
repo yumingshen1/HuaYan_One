@@ -1,0 +1,29 @@
+LoginPage: #登录页面
+  email_input: ['id','email'] #登录页邮箱账户输入框
+  psw_input: ['id','password'] #密码输入框
+  login_btn: ['css selector','.MuiButton-label'] #登录,即下一步
+
+MainPage: #主页
+  avatar_btn: ['id','header-profile-popover-id'] #个人头像点击
+  quit_btn: ['css selector','#header-profile-popover-id-dialog-body span a:nth-child(2)'] #退出操作
+  logout_btn: ['link text','退出'] #点击头像后产生的退出按钮，超链接
+  schedule_tab: ['css selector','nav[role="navigation"] li:nth-child(11)'] #日程--点击操作
+  task_tab: ['css selector','nav[role="navigation"] li:nth-child(10)']#任务--点击操作
+
+  title_div: ['css selector','.slds-global-header__text']
+  schedules_link: ['css selector','.slds-card__body tbody td:nth-child(2)']
+  #logout_img: ['xpath','//header//li[7]/div/div/div']
+  #logout_btn: ['css selector','span:nth-child(3) > a:nth-child(2)']
+
+TaskPage: #任务页面
+  task_tab: [ 'css selector','nav[role="navigation"] li:nth-child(10)' ]#任务--点击操作
+  new_btn: ['css selector','div[title="新建"]']
+  summary_input: ['css selector','[data-schema-key="name"]'] #主题
+  user_select: ['css selector','.selectUser-box']
+  selected_users: ['css selector','#valueLabel_ui li>a']   #已选择用户
+  users_td: ['css selector','[id^="DataTables_Table"] tbody td:nth-child(2)']
+  confirm_btn: ['id','confirm']
+  select_date: ['css selector','.dx-texteditor-input'] # 日期
+  save_btn: ['css selector','button[type="submit"]'] #保存按钮
+  task_list: ['css selector','.dx-row-lines td:nth-child(3) div>a'] #任务列表
+  first_task_name: ['xpath',"//a[contains(@href,'/app/contracts/tasks') and @title]"] #第一个任务的名字
