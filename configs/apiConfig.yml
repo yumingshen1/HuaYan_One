@@ -29,3 +29,6 @@ ContractsAPI: #合同
     { "no": "009", "create_date": "2020-07-07T07:31:06.754Z", "company_id": "QmBLZC5zKaEMu96QN", "othercompany": "38n6uHtDsdfmQ72jT", "project": "jgrJCeMttzD8pHZhy", "contract_type": "7Gy5aL2sM3gqnsg77", "name": "test001", "bop": "付款合同", "applicant": "5efae24570ff1b0012038be1", "owner": "5efae24570ff1b0012038be1", "virtual_contract": "合同","amount": 0, "amount_type": "固定", "receive_payment_type": "一次性", "paid_amount": 0, "unpaid_amount": 0, "receipted_amount": 0, "unclaimed_votes_amount": 0, "received_amount": 0, "unreceived_amount": 0, "for_invoicing_amount": 0, "unfor_invoicing_amount": 0, "space": "jTaQzFyri4ojvYSQm" }
   update:
     { "$set": { "no": "009", "create_date": "2020-07-07T07:31:06.754Z", "company_id": "QmBLZC5zKaEMu96QN", "othercompany": "38n6uHtDsdfmQ72jT", "project": "jgrJCeMttzD8pHZhy", "contract_type": "7Gy5aL2sM3gqnsg77", "name": "test001", "bop": "付款合同", "applicant": "5efae24570ff1b0012038be1", "owner": "5efae24570ff1b0012038be1", "virtual_contract": "合同", "amount": 0, "amount_type": "固定", "receive_payment_type": "一次性", "paid_amount": 0, "unpaid_amount": 0, "receipted_amount": 0, "unclaimed_votes_amount": 0, "received_amount": 0, "unreceived_amount": 0, "for_invoicing_amount": 0, "unfor_invoicing_amount": 0, "space": "jTaQzFyri4ojvYSQm" } }
+
+TaskApi:
+  path: /api/v4/tasks

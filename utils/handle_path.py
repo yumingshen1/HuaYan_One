@@ -15,6 +15,12 @@ configs_path = os.path.join(product_path,'configs')
 #casedata
 caseData_path = os.path.join(product_path,'data')
 
+#screenshot
+screenshot_path = os.path.join(product_path,'outFiles/screenshot')
+
+#日志
+logs_path = os.path.join(product_path,'outFiles/logs')
+
 if __name__ == '__main__':
 
-    print(configs_path)
+    print(screenshot_path)
