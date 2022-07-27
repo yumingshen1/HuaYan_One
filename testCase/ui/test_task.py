@@ -7,15 +7,19 @@
 '''
 任务用例
 '''
-import pytest,os
+import pytest,os,allure
 from common.ApiAssert import ApiAssert
-from utils.handle_path import caseData_path
+from utils.handle_path import caseData_path,report_path
 from utils.handle_api_yml import get_yml_caseData
 from utils.handle_date import get_date_str
 
+@allure.epic('华焱项目——task——UI')
+@allure.feature('task任务')
+@allure.story('task任务添加')
+@allure.title('{title}')
 @pytest.mark.usefixtures('task_fixtrue')
-@pytest.mark.parametrize('summary,date',get_yml_caseData(os.path.join(caseData_path,'task_test_data.yml'),'test_task'))
-def test_task(login_init,summary,date):
+@pytest.mark.parametrize('title,summary,date',get_yml_caseData(os.path.join(caseData_path,'task_test_data.yml'),'test_task'))
+def test_task(login_init,title,summary,date):
     main_page = login_init
     #进入任务页面
     task_page = main_page.goto_TaskPage()
@@ -31,4 +35,5 @@ def test_task(login_init,summary,date):
 
 
 if __name__ == '__main__':
-    pytest.main([__file__,'-sv'])
+    pytest.main([__file__,'-sv','--alluredir',f'{report_path}','--clean-alluredir'])
+    os.system(f'allure serve {report_path}')

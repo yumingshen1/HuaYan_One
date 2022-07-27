@@ -21,6 +21,9 @@ screenshot_path = os.path.join(product_path,'outFiles/screenshot')
 #日志
 logs_path = os.path.join(product_path,'outFiles/logs')
 
+#报告
+report_path = os.path.join(product_path,'outFiles/report')
+
 if __name__ == '__main__':
 
     print(screenshot_path)
