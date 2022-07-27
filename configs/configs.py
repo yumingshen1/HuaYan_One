@@ -8,7 +8,7 @@ class Configs:
     browser_name = 'chrome'
     handless_flage = False #默认有头浏览器
     implicitly_wait = 5 #隐式等待
-    set_page_load_timeout = 10      #等待打开url时间
+    set_page_load_timeout = 15      #等待打开url时间
     timeout = 10
     poll_frequency = 0.5
     usernam = '807145107@qq.com'
