@@ -24,5 +24,7 @@ def get_yml_caseData(fileDir,caseName):
 
 
 if __name__ == '__main__':
-    fileDir = os.path.join(caseData_path,'contract_data.yml')
-    get_yml_caseData(fileDir,'test_tc003001')
+    fileDir = os.path.join(configs_path,'apiConfig.yml')
+    print(get_ApiData_yml(fileDir))
+
+    # get_yml_caseData(fileDir,'test_tc003001')
