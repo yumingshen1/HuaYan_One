@@ -3,6 +3,7 @@
 # Auther : shenyuming
 # @File : baseApi.py
 # @Software : PyCharm
+import inspect
 
 import requests,os
 from utils.handle_api_yml import get_ApiData_yml
@@ -25,7 +26,6 @@ class baseApi:
         self.data = get_ApiData_yml(os.path.join(configs_path,'apiConfig.yml'))[self.__class__.__name__]
 
     def request_send(self,method,json=None,params=None,id="",isLogin=False):
-
         PATH = self.data['path']
         # method = self.data['Method']
         try:
