@@ -19,7 +19,7 @@ class LoginApi(baseApi):
             if getcookies:
                 return respData.cookies
             else:
-                return respData
+                return respData.json()
 
 
 if __name__ == '__main__':
